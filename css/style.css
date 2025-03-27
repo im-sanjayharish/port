@@ -1,7 +1,11 @@
 /* appling google font over the website  */
-body{
+body, html{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
 }
 /* styling menu icon */
 .nav-menu{
@@ -383,4 +387,21 @@ footer .link-group a:hover{
     background-color: #fca61f;
     color: #fff;
     animation: pulse 3s infinite;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 900px) 
+{
+    body {
+        flex-wrap: wrap;
+    }
+    #home {
+        flex-wrap: wrap;
+    }
+    .sanjay {
+        margin-top: 20px;
+    }
 }
